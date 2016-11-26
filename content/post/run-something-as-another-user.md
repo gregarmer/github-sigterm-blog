@@ -15,7 +15,7 @@ This has only been tested on FreeBSD, Debian Linux and OpenSolaris so far.
 
 Compile with: `cc -o setuid setuid.c`
 
-```
+```c
 #include <stdio.h>
 #include <sys/types.h>
 #include <pwd.h>

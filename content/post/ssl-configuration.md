@@ -16,7 +16,7 @@ IE6 users, you're pretty much SOL since I turned off all your cipher suites. It'
 
 For anyone interested, here's the NGINX config I'm using:
 
-```
+```nginx
 server {
     listen 80;
     server_name sigterm.sh;

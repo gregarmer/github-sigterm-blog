@@ -2072,8 +2072,8 @@ ol.toc {
   margin: 0px;
   display: block;
   overflow-x: auto;
-  padding: 15px 20px;
-  font-size: 14px;
+  padding: 10px 10px;
+  font-size: 11.2px;
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   line-height: 22.400000000000002px;
 }

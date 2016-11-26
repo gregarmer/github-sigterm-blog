@@ -13,7 +13,7 @@ This post attempts to explain how to fork child processes in Python, or at least
 
 So you have a basic Python script that you'd like to run as a background process, for whatever reason; perhaps it's a network service that waits for incoming connections, or you want to watch a log file for something. As an example, let's say it looks something like this:
 
-```
+```python
 import time
 import sys
 
@@ -32,7 +32,7 @@ running process.
 
 In order to accomplish this we need something that looks like the following:
 
-```
+```python
 import time
 import sys
 import os
@@ -78,7 +78,7 @@ Finally, we execute the original code, now inside a detached child process. This
 
 There are also some better alternatives, something like this for example:
 
-```
+```python
 import os
 os.spawnl(os.P_DETACH, 'some_log_running_command')
 ```

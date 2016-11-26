@@ -13,7 +13,7 @@ For some reason the OS X install of Git doesn't include the manpages. Here is ho
 
 First off, find the appropriate manpath.
 
-```
+```console
 greg@codemine:~ %> cat /etc/manpaths
 /usr/share/man
 /usr/local/share/man
@@ -21,20 +21,20 @@ greg@codemine:~ %> cat /etc/manpaths
 
 /usr/local/share/man looks good...
 
-```
+```console
 greg@codemine:~ %> VER=`git --version | awk '{print $3}'`
-greg@codemine:~ %> curl -O http://www.kernel.org/pub/software/scm/git/git-manpages-$VER.tar.bz2                              
+greg@codemine:~ %> curl -O http://www.kernel.org/pub/software/scm/git/git-manpages-$VER.tar.bz2
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  242k  100  242k    0     0  92051      0  0:00:02  0:00:02 --:--:--   99k
-greg@codemine:~ %> sudo tar xjv -C /usr/local/share/man -f git-manpages-$VER.tar.bz2   
+greg@codemine:~ %> sudo tar xjv -C /usr/local/share/man -f git-manpages-$VER.tar.bz2
 Password:
 x ./
 x ./man1/
 x ./man1/git-add.1
 [snip]
 x ./man7/gitworkflows.7
-greg@codemine:~ %> rm git-manpages-$VER.tar.bz2    
+greg@codemine:~ %> rm git-manpages-$VER.tar.bz2
 greg@codemine:~ %>
 ```
 

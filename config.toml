@@ -5,11 +5,12 @@ title = "./sigterm.sh"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "codegeeksh"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-11073510-1"
 # Define the number of posts per page
 paginate = 10
 footnotereturnlinkcontents = "↩"
 theme = "hugo-icarus-theme"
+PygmentsCodeFences = true
 
 
 [permalinks]

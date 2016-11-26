@@ -13,7 +13,7 @@ This is something I always search for which doesn't seem to be very clear from t
 
 Add these to **/etc/make.conf**:
 
-```
+```console
 MASTER_SITE_BACKUP?=    \
     ftp://ftp.za.freebsd.org/pub/FreeBSD/ports/distfiles/${DIST_SUBDIR}/
 

@@ -17,7 +17,7 @@ We use this as part of our build / CI infrastructure to alert developers opening
 
 ### Using flake8-diff
 
-```
+```console
 $ pip install flake8-diff
 $ flake8-diff -h
 usage: flake8-diff [-h] [--flake8-options ...] [--vcs {git}]
@@ -100,43 +100,40 @@ Ready to contribute? Here's how to set up `flake8-diff` for local development.
 1. Fork the `flake8-diff` repo on GitHub.
 2. Clone your fork locally:
 
-    ```
+    ```console
     $ git clone git@github.com:your_name_here/flake8-diff.git
     ```
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development:
 
-    ```
+    ```console
     $ mkvirtualenv flake8-diff
     $ cd flake8-diff/
     $ python setup.py develop
     ```
 
-4. Create a branch for local development:
+4. Create a branch for local development, then you can make your changes locally:
 
-    ```
+    ```console
     $ git checkout -b name-of-your-bugfix-or-feature
     ```
 
-   Now you can make your changes locally.
-
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox:
 
-    ```
+    ```console
     $ flake8 flake8-diff tests
     $ python setup.py test
     $ tox
     ```
-
    To get flake8 and tox, just pip install them into your virtualenv.
 
 6. Commit your changes and push your branch to GitHub:
 
-   ```
-   $ git add .
-   $ git commit -m "Your detailed description of your changes."
-   $ git push origin name-of-your-bugfix-or-feature
-   ```
+    ```console
+    $ git add .
+    $ git commit -m "Your detailed description of your changes."
+    $ git push origin name-of-your-bugfix-or-feature
+    ```
 
 7. Submit a pull request through the GitHub website.
 

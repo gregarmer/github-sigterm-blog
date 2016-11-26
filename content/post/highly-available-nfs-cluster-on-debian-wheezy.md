@@ -37,13 +37,13 @@ While writing this guide, I used 2 virtualbox VMs (alice and bob). Each VM confi
 
 ### Configurations
 
-It's good to get some basics down first.  
+It's good to get some basics down first.
 
 #### Packages
 
 Let's start with some useful packages (install on alice and bob):
 
-```
+```console
 alice $ apt-get install ntp vim
 ```
 
@@ -51,7 +51,7 @@ alice $ apt-get install ntp vim
 
 Tweak to suit your environment, of course.
 
-```
+```console
 alice $ cat /etc/network/interfaces
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
@@ -74,7 +74,7 @@ The config will be the same on bob, apart from the IP, which will be 192.168.1.2
 
 This is pretty important, since pretty much everything relies on the servers hostnames.
 
-```
+```console
 alice $ hostname alice.local
 alice $ echo alice.local > /etc/hostname
 bob $ hostname bob.local
@@ -87,13 +87,13 @@ DRBD will be used to constantly sync all data from the primary to the slave, whi
 
 Install DRBD8 utils on alice and bob:
 
-```
+```console
 alice $ apt-get install drbd8-utils
 ```
 
 Drop in the configs on alice and bob. First /etc/drbd.d/global_common.conf
 
-```
+```console
 global {
     usage-count yes;
 }
@@ -126,7 +126,7 @@ common {
 
 and your DRBD resource config in /etc/drbd.d/r0.res
 
-```
+```console
 resource r0 {
     net {
         shared-secret "s3kr1t";
@@ -150,7 +150,7 @@ resource r0 {
 
 Let's get DRBD started so the initial sync can get going.
 
-```
+```console
 # Create metadata on alice
 alice $ drbdadm create-md r0
 
@@ -166,7 +166,7 @@ alice $ drbdadm connect r0
 
 You can check the sync status with this command:
 
-```
+```console
 alice $ cat /proc/drbd
 version: 8.3.10 (api:88/proto:86-96)
 built-in
@@ -177,13 +177,13 @@ built-in
 
 You can now format the DRBD disk using any filesystem you prefer, here I'm using EXT4
 
-```
+```console
 alice $ mkfs.ext4 /dev/drbd0
 ```
 
 Add the DRBD disk to /etc/fstab on alice and bob
 
-```
+```console
 alice $ vi /etc/fstab
 
 # Add a line like this - substitute for your preferred fs and settings
@@ -196,20 +196,20 @@ NFS will be used to serve our highly available data.
 
 Let's start with installing some packages on alice and bob
 
-```
+```console
 alice $ apt-get install nfs-kernel-server
 ```
 
 Now tell the new dependency based booting not to start NFS automatically.  NFS will be started automatically by heartbeat later on.
 
-```
+```console
 alice $ insserv --remove nfs-common
 alice $ insserv --remove nfs-kernel-server
 ```
 
 Setup our exports on alice and bob
 
-```
+```console
 alice $ vi /etc/exports
 
 # Add a line similar to this, change to suit your network and requirements
@@ -222,14 +222,14 @@ We'll use heartbeat to syncronize the cluster, handle fencing and to promote the
 
 Install heartbeat on alice and bob
 
-```
+```console
 alice $ apt-get install heartbeat
 ```
 
 Drop in the configs on alice and bob as below.  You'll need 3 files in total.
 
 /etc/heartbeat/ha.cf
-```
+```console
 logfacility     local0
 keepalive 2
 deadtime 10
@@ -239,14 +239,14 @@ node alice bob
 ```
 
 /etc/heartbeat/haresources
-```
+```console
 alice  IPaddr::192.168.1.200/24/eth0 drbddisk::r0 Filesystem::/dev/drbd0::/data::ext4 nfs-kernel-server
 ```
 
 *Note:* this line starts with *alice* on both nodes - this is the "preferred primary".
 
 /etc/heartbeat/authkeys
-```
+```console
 auth 3
 3 md5 s3kr1t
 ```
@@ -254,7 +254,7 @@ auth 3
 *Note:* set a good password, especially if you deploy this in a public cloud!
 
 Finally, start up heartbeat:
-```
+```console
 alice $ /etc/init.d/heartbeat start
 ```
 
@@ -265,7 +265,7 @@ If you run *ifconfig* on alice, you should see that it now has the floating IP. 
 This is the best part.  Let's kill the primary server and make sure the slave takes over seamlessly.
 
 The simplest way to simulate a failure is to stop heartbeat on whichever server is currently the primary.
-```
+```console
 alice $ /etc/init.d/heartbeat stop
 ```
 

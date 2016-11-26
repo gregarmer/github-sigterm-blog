@@ -15,13 +15,13 @@ This simple how-to explains how to get your Time Machine backups working with a 
 
 1)    Enable unsupported network volumes on your Mac by opening a Terminal and pasting this:
 
-```
+```console
 greg@macbook:~ %> defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1
 ```
 
 2)    Create a new ZFS filesystem and enable CIFS access to it:
 
-```
+```console
 greg@opensolaris:~ %> zfs create tank/userbackups
 greg@opensolaris:~ %> zfs set sharesmb=on tank/userbackups
 greg@opensolaris:~ %> zfs set sharesmb=name=userbackups tank/userbackups
@@ -35,7 +35,7 @@ You will probably want to setup the correct permissions on your new share, more 
 
 4)    Create the correct disk image:
 
-```
+```console
 greg@macbook:~ %> /bin/bash
 greg@macbook:~ %> cd /Volumes/userbackups
 greg@macbook:~ %> SYSNAME=`scutil --get ComputerName`

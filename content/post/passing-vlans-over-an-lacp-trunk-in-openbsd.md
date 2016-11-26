@@ -15,7 +15,7 @@ I did this with a Cisco 3750 switch.  The switch config was:
 
 *Port-channel*
 
-```
+```console
 interface Port-channel42
  description etherchannel fw
  switchport trunk encapsulation dot1q
@@ -28,7 +28,7 @@ interface Port-channel42
 
 *Interfaces*
 
-```
+```console
 interface GigabitEthernet1/0/23
  description fw-pc42-1
  switchport trunk encapsulation dot1q
@@ -49,7 +49,7 @@ interface GigabitEthernet1/0/24
 
 Then on the firewall:
 
-```
+```console
 # cat /etc/hostname.em0
 up
 # cat /etc/hostname.em1
@@ -61,7 +61,7 @@ up
 
 and lastly the VLAN interfaces:
 
-```
+```console
 # cat /etc/hostname.vlan57
 inet 172.29.57.1 255.255.255.0 NONE vlan 57 vlandev trunk0 descr WIFI
 # cat /etc/hostname.vlan58
@@ -78,7 +78,7 @@ You can set this up by executing `sh /etc/netstart` without having to run a bunc
 
 Your interfaces should look like this when it's up:
 
-```
+```console
 em0: flags=8b43<UP,BROADCAST,RUNNING,PROMISC,ALLMULTI,SIMPLEX,MULTICAST> mtu 1500
         lladdr 0c:c4:7a:ac:70:02
         index 1 priority 0 llprio 3
@@ -119,7 +119,7 @@ vlan58: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 
 and the switch:
 
-```
+```console
 core-3750-1#show etherchannel summary
 Flags:  D - down        P - bundled in port-channel
         I - stand-alone s - suspended

@@ -13,7 +13,7 @@ It's somewhat ironic that on February 3, 2010 the last five /8s from the IANA IP
 
 <!--more-->
 
-```
+```console
 102/8   AfriNIC    2011-02    whois.afrinic.net ALLOCATED
 103/8   APNIC      2011-02    whois.apnic.net   ALLOCATED
 104/8   ARIN       2011-02    whois.arin.net    ALLOCATED

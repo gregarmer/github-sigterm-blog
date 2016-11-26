@@ -21,7 +21,7 @@ So how do we use it to serve our little Django project in a development friendly
 
 I've put together some code (some borrowed from other sources) and constructed a simple replacement command called "trunserver" (twisted-runserver). You can grab this code from <a title="GitHub - trunserver" href="https://github.com/gregarmer/trunserver" target="_blank">Github</a>. Simply install it using the standard methods, and run it with:
 
-```
+```console
 python manage.py trunserver [IP:PORT] [--settings=foo] [--noreload]
 ```
 

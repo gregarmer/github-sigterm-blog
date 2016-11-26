@@ -15,7 +15,7 @@ This script will generate the required digraph data to pipe into <a href="http:/
 
 The script:
 
-```
+```python
 from optparse import OptionParser, OptionGroup
 
 import psycopg2
@@ -92,13 +92,13 @@ if __name__ == "__main__":
 
 You could run it as follows:
 
-```
+```console
 python postgres-deps.py --dbname some_database | dot -Tpng > deps.png
 ```
 
 <strong>Note</strong>: for other options use:
 
-```
+```console
 python postgres-deps.py --help
 ```
 

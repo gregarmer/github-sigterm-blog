@@ -19,7 +19,7 @@ This is a great package that I wanted installed on all <a href="http://www.debia
 
 #### Module layout
 
-```
+```console
 greg@codemine:~/code/puppet %> find modules/debsecan
 modules/debsecan
 modules/debsecan/files
@@ -31,7 +31,7 @@ modules/debsecan/manifests/init.pp
 
 #### Manifest - init.pp
 
-```
+```console
 greg@codemine:~/code/puppet %> cat modules/debsecan/manifests/init.pp
 class debsecan {
     package { debsecan: ensure => latest }
@@ -59,8 +59,8 @@ There is really not much to this manifest. It essentially ensures debsecan is in
 
 #### Debsecan config
 
-```
-greg@codemine:~/code/puppet %> cat modules/debsecan/files/debsecan     
+```console
+greg@codemine:~/code/puppet %> cat modules/debsecan/files/debsecan
 # Configuration file for debsecan.  Contents of this file should
 # adhere to the KEY=VALUE shell syntax.  This file may be edited by
 # debsecan's scripts, but your modifications are preserved.
@@ -82,7 +82,7 @@ SOURCE=
 
 #### Debsecan cron
 
-```
+```console
 greg@codemine:~/code/puppet %> cat modules/debsecan/files/debsecan-cron
 # cron entry for debsecan
 MAILTO=root

@@ -13,7 +13,7 @@ Add this:
 
 to your ~/.profile and you should see something like this when running it:
 
-```
+```console
 root@tank:~# zonestat
 ZONEID    NPROC  SWAP   RSS MEMORY      TIME  CPU ZONE
      0       58 1198M 1206M    30%  16:15:40 1.7% global

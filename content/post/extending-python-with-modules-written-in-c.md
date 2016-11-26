@@ -15,7 +15,7 @@ This code gives you a single method "do()" that will print the output of a comma
 
 Dump this into `mycmd.c`
 
-```
+```c
 #include <Python.h>
 
 static PyObject * mycmd_do(PyObject *self, PyObject *args) {
@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
 
 Great, so we have some example code now, here is how you build an importable module with it:
 
-```
+```console
 greg@codemine:~/code/mycmd %> cc -dynamic -g -Wall -I/System/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6 -c mycmd.c -o mycmd.o
 greg@codemine:~/code/mycmd %> cc -bundle -undefined dynamic_lookup mycmd.o -o mycmd.so
 ```
@@ -57,7 +57,7 @@ greg@codemine:~/code/mycmd %> cc -bundle -undefined dynamic_lookup mycmd.o -o my
 
 This should give you a mycmd.so on unix / linux and a mycmd.dll on windows. In the same directory, run a python interpreter and test it out.
 
-```
+```console
 greg@codemine:~/code/mycmd %> python
 Python 2.6.3 (r263:75183, Nov  4 2009, 12:53:19)
 [GCC 4.2.1 (Apple Inc. build 5646)] on darwin

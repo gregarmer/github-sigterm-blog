@@ -13,7 +13,7 @@ Ever wondered what the status of your OpenVPN server is, or wanted some simple s
 
 Here is a really simple script to give you some info. The output looks like this:
 
-```
+```console
 greg@leonis:~$ vpnstatus
 Common Name   Virtual Address    Real Address          Sent      Received             Connected Since
 greg.vpn      10.8.142.6         196.9.23.59        1.11 MB     282.50 KB    Thu Jul 16 09:07:15 2009
@@ -21,7 +21,7 @@ greg.vpn      10.8.142.6         196.9.23.59        1.11 MB     282.50 KB    Thu
 
 Firstly, ensure your server is actually saving the stats somewhere (/etc/openvpn/openvpn.status in my example):
 
-```
+```console
 greg@leonis:~$ grep status /etc/openvpn/server.conf
 status openvpn.status
 ```

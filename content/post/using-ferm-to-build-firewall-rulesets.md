@@ -15,7 +15,7 @@ I've included an example configuration below of one of my machines. The network 
 
 First off, here is my network interface configuration to give you an idea of what is where:
 
-```
+```console
 kore:~# cat /etc/network/interfaces
 
 auto lo
@@ -50,7 +50,7 @@ There is nothing extremely complicated here, just a basic IPv4 static IP assigne
 
 The ferm configuration in use here looks like this:
 
-```
+```console
 kore:~# cat /etc/ferm/ferm.conf
 # -*- shell-script -*-
 #
@@ -153,7 +153,7 @@ Finally, in the IPv6 filter table, we allow the same set of incoming ports as IP
 
 Once that's done, simply run:
 
-```
+```console
 kore:~# ferm /etc/ferm/ferm.conf
 ```
 

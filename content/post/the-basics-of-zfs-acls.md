@@ -13,7 +13,7 @@ This post was mostly inspired by reading <a href="http://www.1stbyte.com/2009/07
 
 Basically I have a pool set out as follows:
 
-```
+```console
 tank
 tank/media
 tank/zones
@@ -23,7 +23,7 @@ tank/media is served via CIFS and NFS to multiple clients on my network, each wi
 
 Everything was working great until I found that files and directories created by clients ended up looking like this:
 
-```
+```console
 ----------  1 greg staff 734310400 2009-07-18 19:10 foo.txt
 d---------  2 greg staff        19 2008-12-06 14:10 Bar
 ```
@@ -31,7 +31,8 @@ d---------  2 greg staff        19 2008-12-06 14:10 Bar
 This sure didn't go down well when other users needed to access those files or directories.
 
 So in following the above mentioned post I did this:
-```
+
+```console
 # zfs set aclinherit=passthrough tank/media
 # zfs set aclmode=passthrough tank/media
 # /bin/chmod 0774 /tank/media

@@ -19,27 +19,27 @@ foo1 < foo10 < foo2
 
 As an example, if you have this sequence:
 
-```
+```python
 >>> seq = ['foo', 'foo1', 'foo2', 'foo10', 'foobar10', '20', '100', '1', '3', 'bar1']
 ```
 
 a regular sort would produce this:
 
-```
+```python
 >>> sorted(seq)
 ['1', '100', '20', '3', 'bar1', 'foo', 'foo1', 'foo10', 'foo2', 'foobar10']
 ```
 
 whereas a natural sort would produce this:
 
-```
+```python
 >>> natural_sort(seq)
 ['1', '3', '20', '100', 'bar1', 'foo', 'foo1', 'foo2', 'foo10', 'foobar10']
 ```
 
 Here is the code:
 
-```
+```python
 import re
 
 def natsort_key(item):

@@ -13,7 +13,7 @@ This uses standard libraries only, and doesn't require anything third party. It 
 
 <!--more-->
 
-```
+```java
 /*
  * Java POST Example
  */

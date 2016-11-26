@@ -22,39 +22,13 @@ My interests include <a href="http://www.python.org/" target="_blank">Python</a>
 
 #### Where you can find me
 
-<table class="table condensed-table">
-  <tbody>
-    <tr>
-      <th>E-mail</th>
-      <td>greg at sigterm dot sh</td>
-    </tr>
-    <tr>
-      <th>IRC</th>
-      <td>wiqd on networks <a href="http://freenode.net/">Freenode</a>, <a href="http://shadowfire.org/">ShadowFire</a> and <a href="http://www.oftc.net/oftc/">OFTC</a></td>
-    </tr>
-    <tr>
-      <th>LinkedIn</th>
-      <td><a href="http://www.linkedin.com/in/gregarmer">http://www.linkedin.com/in/gregarmer</a></td>
-    </tr>
-    <tr>
-      <th>Twitter</th>
-      <td><a href="https://twitter.com/#!/gregarmer">https://twitter.com/#!/gregarmer</a></td>
-    </tr>
-    <tr>
-      <th>Github</th>
-      <td><a href="https://github.com/gregarmer">https://github.com/gregarmer</a></td>
-    </tr>
-    <tr>
-      <th>Launchpad</th>
-      <td><a href="http://launchpad.net/~wiqd">http://launchpad.net/~wiqd</a></td>
-    </tr>
-    <tr>
-      <th>OpenPGP keys</th>
-      <td><a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0xC12DE9B4E4FA0F406B44F898A4E1B379D1C2BAC9&amp;op=index">D1C2BAC9</a></td>
-    </tr>
-    <tr>
-      <th>SSH keys</th>
-      <td><a href="https://greg.pub/">greg.pub</a></td>
-    </tr>
-  </tbody>
-</table>
+|  |  |
+|---|---|
+| E-mail | greg[at]sigterm dot sh |
+| IRC | wiqd on networks [Freenode](http://freenode.net/), [ShadowFire](http://shadowfire.org/) and [OFTC](http://www.oftc.net/oftc/) |
+| LinkedIn | [linkedin.com/in/gregarmer](http://www.linkedin.com/in/gregarmer) |
+| Twitter | [twitter.com/gregarmer](https://twitter.com/gregarmer) |
+| Github | [github.com/gregarmer](https://github.com/gregarmer) |
+| Launchpad | [launchpad.net/~wiqd](http://launchpad.net/~wiqd) |
+| OpenPGP Keys | [D1C2BAC9](http://keyserver.ubuntu.com:11371/pks/lookup?search=0xC12DE9B4E4FA0F406B44F898A4E1B379D1C2BAC9&amp;op=index) |
+| SSH Keys | [greg.pub](https://greg.pub/) |
