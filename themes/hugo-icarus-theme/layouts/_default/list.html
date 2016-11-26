@@ -12,7 +12,7 @@
                 <div class="archives">
                     {{ $paginator := .Paginate .Data.Pages }}
                     {{ range $paginator.Pages }}
-                        {{ .Render "summary" }} 
+                        {{ .Render "summary" }}
                     {{ end }}
                 </div>
             </section>
