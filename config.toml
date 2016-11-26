@@ -1,5 +1,5 @@
-#baseurl = "https://sigterm.sh/"
-baseurl = "https://gregarmer.github.io/"
+baseurl = "https://sigterm.sh/"
+#baseurl = "https://gregarmer.github.io/"
 languageCode = "en-us"
 title = "./sigterm.sh"
 # Enable comments by entering your Disqus shortname
