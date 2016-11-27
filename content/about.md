@@ -8,17 +8,29 @@ slug        = "about"
 disable_comments = true
 +++
 
-Hi, I'm Greg and this is my personal blog.  You'll find a lot of tech / programming related posts here, along with posts around some of my hobbies like photography.
+Hi, I'm Greg and this is my personal blog.  You'll find a lot of tech /
+programming related posts here, along with posts around some of my hobbies
+like photography.
 
-I have a passion for open source software, Linux, UNIX, the quest for perfect code and doing everything the best way possible.
+I have a passion for open source software, Linux, UNIX, the quest for perfect
+code and doing everything the best way possible.
 
 #### What I do
 
-I’m a software and systems architect who lives in New York, USA. I work mostly on systems and network code involving high availability, clustering and scalable architecture. My day job involves working on a number of web based enterprise applications, looking after a bunch of servers and generally doing my part in making the web a better place. I also spend as much time as I can working on open source software and contributing to the open source community.
+I’m a software and systems architect who lives in New York, USA. I work mostly
+on systems and network code involving high availability, clustering and
+scalable architecture. My day job involves working on a number of web based
+enterprise applications, looking after a bunch of servers and generally doing
+my part in making the web a better place. I also spend as much time as I can
+working on open source software and contributing to the open source community.
 
 #### Interests
 
-My interests include <a href="http://www.python.org/" target="_blank">Python</a>, <a href="http://twistedmatrix.com/trac/" target="_blank">Twisted</a> and most things produced by <a href="https://launchpad.net/divmod.org" target="_blank">Divmod</a>, C / C++, Java, application architecture, multi-core processing, efficiency, clustering, scalability, photography and music (mostly the guitar).
+My interests include [Python](http://www.python.org/),
+[Twisted](http://twistedmatrix.com/trac/) and most things produced by
+[Divmod](https://launchpad.net/divmod.org), C / C++, Java, application
+architecture, multi-core processing, efficiency, clustering, scalability,
+photography and music (mostly the guitar).
 
 #### Where you can find me
 
