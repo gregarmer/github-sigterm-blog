@@ -651,8 +651,11 @@ code {
 #profile .inner .base-info #avatar {
   display: block;
   margin: 10px auto 20px;
-  width: 128px;
-  height: 128px;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
 }
 #profile .inner .base-info #name,
 #profile .inner .base-info #title,
