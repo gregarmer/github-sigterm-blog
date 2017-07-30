@@ -5,6 +5,7 @@ description = ""
 tags        = [ "unix", "linux", "networking" ]
 topics      = [ "networking", "unix" ]
 slug        = "building-a-home-lab"
+banner      = "/static/home-lab-servers.jpg"
 +++
 
 I've been setting up a small home lab for testing various things out and I
