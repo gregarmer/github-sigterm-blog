@@ -26,7 +26,7 @@ PygmentsCodeFences = true
     #logo = "css/images/logo.png"
 
     # Format dates with Go's time formatting
-    date_format = "Jan 01, 2006"
+    date_format = "Jan 02, 2006"
 
     # Add custom assets with their paths relative to the static folder
     custom_css = []
