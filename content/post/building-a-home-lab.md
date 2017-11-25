@@ -5,11 +5,11 @@ description = ""
 tags        = [ "unix", "linux", "networking" ]
 topics      = [ "networking", "unix" ]
 slug        = "building-a-home-lab"
-banner      = "/static/home-lab-servers.jpg"
+thumbnail   = "/static/home-lab-servers.jpg"
 +++
 
 I've been setting up a small home lab for testing various things out and I
-needed a some space for virtual machines. I don't have any requirements for
+needed some space for virtual machines. I don't have any requirements for
 insane performance, but I also didn't want a really sluggish setup, so here's
 what I did...
 

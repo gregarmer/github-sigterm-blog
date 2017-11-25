@@ -5,6 +5,8 @@ description = ""
 tags        = []
 topics      = []
 slug        = "about"
+type = "posts"
+layout = "single"
 disable_comments = true
 +++
 

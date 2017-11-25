@@ -5,7 +5,7 @@ description = ""
 tags        = [ "general", "random thoughts" ]
 topics      = [ "general" ]
 slug        = "google-inbox"
-banner      = "https://media.sigterm.sh/2015/Screen-Shot-2014-10-26-at-4-35-23-AM-1.png"
+thumbnail   = "https://media.sigterm.sh/2015/Screen-Shot-2014-10-26-at-4-35-23-AM-1.png"
 +++
 
 This is an insanely awesome way to work with your e-mail!  Google have essentially turned your e-mail inbox into a massive todo list, which as it turns out, is actually a nice way to treat it.

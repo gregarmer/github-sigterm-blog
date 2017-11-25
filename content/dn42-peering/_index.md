@@ -5,7 +5,10 @@ description = ""
 tags        = []
 topics      = []
 slug        = "dn42-peering"
+type        = "posts"
+layout      = "single"
 disable_comments = true
+disable_authorbox = true
 +++
 
 If you are interested in peering with me on [dn42](https://dn42.net/Home), find the closest node(s) below and send the following to me in an e-mail to greg[at]sigterm.sh:
@@ -27,7 +30,7 @@ Network Name: **GXANET**
 
 ### IPsec Parameters
 
-```
+```console
 keyexchange=ikev2
 ike=aes256-sha256-modp2048!
 esp=aes256-sha256-modp2048!
@@ -45,7 +48,7 @@ lifetime=3600s
 * Tunnel IPv4: 172.20.194.70
 * IPsec Public Key:
 
-```
+```console
 -----BEGIN PUBLIC KEY-----
 MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2JI2A4TffozZplEoy8s3
 6/UNc1L4LvNXEceUwIPHxfdEfvimkeHOHsh+WJC2OBAIw3pSCAP5EQPy1zc4sNvM
@@ -70,7 +73,7 @@ UL2S4ZUBxcQGnO75UAFTZDUCAwEAAQ==
 * Tunnel IPv4: 172.20.194.90
 * IPsec Public Key:
 
-```
+```console
 -----BEGIN PUBLIC KEY-----
 MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAu3d3SAmnGW89loxS2DQi
 +AgMYNTumxcRijzQIZCNHjzpfYMOQUAxos2OPE67nr24KQsl+m5wt6U2h0jXSQZh

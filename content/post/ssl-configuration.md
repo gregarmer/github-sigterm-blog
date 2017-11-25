@@ -5,7 +5,7 @@ description = ""
 tags        = [ "linux", "security" ]
 topics      = [ "linux" ]
 slug        = "ssl-configuration"
-banner      = "https://media.sigterm.sh/2015/Screen-Shot-2014-10-26-at-5-34-16-AM.png"
+thumbnail   = "https://media.sigterm.sh/2015/Screen-Shot-2014-10-26-at-5-34-16-AM.png"
 +++
 
 As you may have noticed, this site is now served over HTTPS!

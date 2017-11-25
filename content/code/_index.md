@@ -6,6 +6,7 @@ tags        = []
 topics      = []
 slug        = "code"
 disable_comments = true
+disable_authorbox = true
 +++
 
 ![](https://media.sigterm.sh/2015/source-code.jpg)

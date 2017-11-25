@@ -1,0 +1,51 @@
+.logo__tagline {
+    color: #336699;
+}
+
+.widget__title {
+	border-bottom: 3px solid #336699;
+}
+
+.menu {
+	border-bottom: 5px solid #336699;
+}
+
+a:hover {
+	color: #336699;
+}
+
+.menu__item--active {
+	background: #336699;
+}
+
+.menu__item:hover {
+	background: #336699;
+}
+
+.pagination__item:hover, .pagination__item--current {
+    background: #336699;
+}
+
+.post__content a, .list__excerpt a, .warning a {
+    color: #336699;
+}
+
+.post__content a:hover, .list__excerpt a:hover, .warning a:hover {
+	color: #336699;
+}
+
+.widget__link--taglist:hover, .widget .widget__link--taglist:hover {
+	background: #336699;
+}
+
+.btn:hover {
+	background: #336699;
+}
+
+.tags .icon {
+	background: #336699;
+}
+
+.tags__item:hover {
+	background: #336699;
+}
