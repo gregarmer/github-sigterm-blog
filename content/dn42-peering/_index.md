@@ -27,6 +27,7 @@ Network Name: **GXANET**
 
 - New York, NY, USA
 - San Francisco, CA, USA
+- Frankfurt, DE
 
 ### IPsec Parameters
 
@@ -40,7 +41,7 @@ lifetime=3600s
 
 ### Nodes
 
-#### gxa-nyc-01.sigterm.dn42
+#### nyc-1.us.gxa.dn42.io
 
 * Location: New York, NY, USA
 * Public IPv4: 159.203.180.81
@@ -65,7 +66,7 @@ UL2S4ZUBxcQGnO75UAFTZDUCAwEAAQ==
 -----END PUBLIC KEY-----
 ```
 
-#### gxa-sfo-01.sigterm.dn42
+#### sfo-1.us.gxa.dn42.io
 
 * Location: San Francisco, CA, USA
 * Public IPv4: 104.236.188.18
@@ -87,5 +88,30 @@ gtHmfM153dOnHvAwKSEB8NSdOa8wm+jcdCQTQ9EMQcq8zTmmgMFFrdhQAE5T/i70
 aa2ZHW/XqjXY8NX8J1UBHsB9/mQXUQEdhcx/KK+QpwEAG4XpK8FdIthuotJrT+X8
 bx28UEf3O8eh/SwNzvrW54yB6gT/7xL1HUtXCKeSMpa0Cjh61Dhl2PmfrZfYhWs9
 lG/3jHWGHgwBf6Wm7h1mHEMCAwEAAQ==
+-----END PUBLIC KEY-----
+```
+
+#### fra-1.de.gxa.dn42.io
+
+* Location: Frankfurt, DE
+* Public IPv4: 45.77.64.145
+* Public IPv6: 2001:19f0:6c01:8df:5400:1ff:fe4a:a855
+* Tunnel IPv4: 172.20.194.81
+* IPsec Public Key:
+
+```console
+-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAz9c27MPN9prCzcR0VQIg
+ZBwH/IJl0O1tMrB+obd4zahV22NeQTVtbAHf7ZxSvr1XJemAjw286V7EQVBWh43n
+PTx5ZQ9WncZ48RTs/GuSUpJGqUs9EaYa+Rd+wnRssXzWrmyD2FW87xgfLmgqCT9i
+mafbLC1AauBBooNru7LFhpjpo/GNQDXfnxnMer+1EStnDtwoRk1OzbiStXS1REU4
+Z4sCijFrAn8P823Vnfk0KY94ySYHGIIbfFmqoECvfAA+OqAYOJbmPO0zotnr30SY
+6Atg1sqlA0hJCIRY/tv26Oh1U01u/WziFdfTx8kaooXVAIWk+JumEm+0jFc0d8PA
+2vmnNkxfHB0rdByHh6jBgqRPcAydddPWni2QqA2dIcx6qBXO8+M8Rgblnwtq3kzx
+T+lMHlofy23+HmQK7OtApTOJ8+ODZVJdEu/PQBBRB7thJ50r6uu5X8uwJ/Hygkwz
+C5uNZBdjYww/MAs30fTZQdyo2VIc+FIRWkT6XFOU9Xlck89egen4j5ptV7tZGihc
+7lqwWCy8nuiUG2+pwnDSYwtemxChlh155F6fjVMyhZJeqgI0A1CHpYlAoGKAHL81
+gMYte/vZWDPPtNG9ile1AlCk5XM01gNgcxPTyt9+F9qRhU9ED63nI9Hb2pAnLBpD
+FE4pSusk9FDNZAJu36XoO5sCAwEAAQ==
 -----END PUBLIC KEY-----
 ```
