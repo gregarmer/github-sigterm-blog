@@ -29,6 +29,11 @@ Network Name: **GXANET**
 - San Francisco, CA, USA
 - Frankfurt, DE
 
+### Tools
+
+- [Looking Glass - Internet](https://lg.gxa.dn42.io/)
+- [Looking Glass - DN42](https://lg.sigterm.dn42/)
+
 ### IPsec Parameters
 
 ```console
