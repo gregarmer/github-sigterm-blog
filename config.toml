@@ -52,8 +52,16 @@ PygmentsCodeFences = true
     weight = -90
     url = "/dn42-peering/"
 [[menu.main]]
-    name = "About"
+    name = "audiophilia"
     weight = -80
+    url = "/audiophilia/"
+[[menu.main]]
+    name = "paragliding"
+    weight = -70
+    url = "/paragliding/"
+[[menu.main]]
+    name = "About"
+    weight = -60
     url = "/about/"
 
 # Enable and disable widgets for the right sidebar
