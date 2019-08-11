@@ -17,7 +17,7 @@ PygmentsCodeFences = true
 [Author]
     name = "Gregory Armer"
     bio = "Sometimes I just want to give it all up and become a handsome billionaire."
-    avatar = "avatar.jpeg"
+    avatar = "greg.png"
 
 [params]
     location = "New York, NY"
